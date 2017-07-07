@@ -1,0 +1,12 @@
+<!--content.wxml-->
+<scroll-view class="chapter-scroll" scroll-top="{{scrollTop}}" scroll-y enable-back-to-top >
+  <view class="chapter-box">
+    <text class="chapter-title">{{chapter.title}}</text>
+    <text class="chapter-content">{{chapter.body}}</text>
+    <view class="button-box">
+      <button bindtap="getPre" wx:if="{{book.currentChapter > 0}}">上一章</button>
+      <button bindtap="toDirectory">目录</button>
+      <button bindtap="getNext" wx:if="{{book.currentChapter < total - 1}}">下一章</button>
+    </view>
+  </view>
+</scroll-view>

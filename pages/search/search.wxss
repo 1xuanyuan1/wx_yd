@@ -1,0 +1,58 @@
+/* search.wxss */
+.search-head{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.search-input {
+  border: 1rpx solid #ebf0f0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+.search-btn{
+  margin: 0px;
+}
+
+.search-books{
+  margin-top: 10px;
+  height: calc(100vh - 120rpx);
+  background: #ebf0f0;
+}
+.search-book{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.search-tags {
+  padding-top: 100rpx;
+  text-align: center;
+}
+.tag-head {
+  margin-bottom: 50rpx;
+}
+.tag {
+  color: cornflowerblue;
+}
+
+.clear{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /*padding: 15px;*/
+  z-index: 9999;
+}
+.clear:after{
+  border: none;
+}

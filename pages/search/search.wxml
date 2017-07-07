@@ -1,0 +1,28 @@
+<!--search.wxml-->
+<view class="container">
+  <view class="search-head">
+    <input class="search-input" bindinput="setSearchWord"  value="{{search}}" placeholder="输入书名或者作者名" >
+    <button class="clear" wx:if="{{showClear}}" bindtap="clearWord">
+      <icon type="clear" size="20" bindtap="clearWord"/>
+    </button>
+    </input>
+    <button class="search-btn" bindtap="search">搜索</button>
+  </view>
+  <view class="search-tags" wx:if="{{books.length < 1}}">
+    <view class="tag-head">热门搜索</view>
+    <text class="tag" wx:for="{{tags}}" wx:key="index" bindtap="setWord" data-word="{{item}}">
+      {{item}}
+    </text>
+  </view>
+  <scroll-view class="search-books" scroll-y wx:else>
+    <view class="search-book" bindtap="skip" data-bookid="{{item._id}}" wx:for="{{books}}" wx:key="index">
+      <image class="cover" src="{{item.cover}}"></image>
+      <view class="book-content">
+        <text class="title">{{item.title}}</text>
+        <text class="content text-hint">{{item.author}} | {{item.cat}}</text>
+        <text class="content text-hint">{{item.shortIntro}}</text>
+        <text class="content">{{item.latelyFollower}}人在追</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,36 @@
+/* directory.wxss */
+.directory-box{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.directory-item{
+  padding: 5px 40rpx 5px 40rpx;
+  height: 25px;
+  font-size: 14px;
+  border-bottom: 1px dashed #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.directory-content{
+  width: calc(100vw - 200rpx);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.directory-right{
+  width: 15rpx;
+  height: 30rpx;
+}
+.directory-pre{
+  width: 22rpx;
+  height: 30rpx;
+}
+.directory-active{
+  color: red;
+}
+.directory-num{
+  color: #ccc;
+  font-size: 12px;
+}

@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/book/detail",
+    "pages/book/chapter",
+    "pages/book/directory"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "悦读神器",
+    "navigationBarTextStyle": "black"
+  }
+}

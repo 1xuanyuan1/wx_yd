@@ -1,0 +1,22 @@
+/* pages/book/chapter.wxss */
+.chapter-scroll{
+  height: 100vh;
+}
+.chapter-box{
+  width: calc(100vw - 80rpx);
+  padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter-title{
+  text-align: center;
+  margin-bottom: 40rpx;
+  font-size: 20px;
+}
+
+.button-box{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}

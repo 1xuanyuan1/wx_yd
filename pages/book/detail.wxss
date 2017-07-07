@@ -1,0 +1,79 @@
+/* detail.wxss */
+.book-info{
+  display: flex;
+  margin-top: 40rpx;
+  padding-left: 100rpx;
+  width: calc(100vw - 100rpx);
+}
+.book-content{
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content{
+  margin-bottom: 0;
+}
+
+.button-box{
+  margin-top: 40rpx;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.count-box{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20rpx;
+  border-bottom: 2px solid #ebf0f0;
+}
+.count-item{
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 20rpx;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.count-num {
+  margin-top: 20rpx;
+}
+
+.intro {
+  padding: 0 40rpx;
+  width: calc(100vw - 80rpx);
+}
+
+.recommend-box {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+.recommend-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.cover{
+  width: 120rpx;
+  height: 180rpx;
+}
+
+.recommend-item > .cover {
+  margin-bottom: 30rpx;
+}
+
+.border {
+  padding-bottom: 30rpx;
+  border-bottom: 20rpx solid #ebf0f0;
+}
+
+button.gray{
+  background: gray;
+}

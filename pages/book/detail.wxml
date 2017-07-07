@@ -1,0 +1,37 @@
+<!--detail.wxml-->
+<view class="container">
+  <view class="book-info">
+    <image class="cover" src="{{book.cover}}"></image>
+    <view class="book-content">
+      <text class="title">{{book.title}}</text>
+      <text class="content">{{book.author}} <text class="text-hint">| {{book.cat}} | {{book.wordCount}}</text></text>
+      <text class="content"><text class="text-hint">{{book.updated}} </text> {{book.lastChapter}}</text>
+    </view>
+  </view>
+  <view class="button-box border">
+    <button size="mini" type="warn" bindtap="toggleWatch" class="{{isWatch? 'gray' : ''}}">
+    {{isWatch? '+ 不追了':'+ 追更新'}}
+    </button>
+    <button size="mini" type="warn" bindtap="toContent" data-bookid="{{book._id}}">开始阅读</button>
+  </view>
+  <view class="count-box">
+    <view class="count-item" wx:for="{{counts}}" wx:key="{{item}}">
+      <text>{{item}}</text>
+      <text class="count-num">{{book[index]}}</text>
+    </view>
+  </view>
+  <view class="intro border">
+    <text class="title">
+      {{book.longIntro}}
+    </text>
+  </view>
+  <text class="title">
+     推荐书籍
+  </text>
+  <view class="recommend-box">
+    <view class="recommend-item" wx:for="{{recommends}}"  wx:key="{{index}}" data-bookid="{{item._id}}" bindtap="skip">
+      <image class="cover" src="{{item.cover}}"></image>
+      <text class="title">{{item.title}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<!--directory.wxml-->
+<scroll-view class="directory-box" scroll-top="{{scrollTop}}" scroll-y enable-back-to-top>
+  <view class="directory-item {{currentChapter == index ? 'directory-active' : ''}}" wx:for="{{chapters}}" wx:key="{{index}}" bindtap="toChapter" data-index="{{index}}">
+    <image class="directory-pre" src="../../static/image/directory_previewed.png" wx:if="{{index < currentChapter}}"></image>
+    <image class="directory-pre" src="../../static/image/directory_selected.png" wx:elif="{{index == currentChapter}}"></image>
+    <image class="directory-pre" src="../../static/image/directory_not_previewed.png" wx:else></image>
+    <text class="directory-num">{{index + 1}}.</text>
+    <text class="directory-content">{{item.title}}</text>
+    <image class="directory-right" src="../../static/image/bd_arrow_right.png"></image>
+  </view>
+</scroll-view>

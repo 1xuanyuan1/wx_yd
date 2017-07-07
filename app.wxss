@@ -1,0 +1,39 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+/* 书籍列表的通用样式 */
+.book-content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+
+.cover{
+  width: 80rpx;
+  height: 120rpx;
+  background: #ebf0f0;
+  border: 1px solid #ccc;
+}
+
+.title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.content {
+  font-size: 12px;
+  margin-bottom: 5px;
+  max-width: 500rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-hint{
+  color: #999;
+}
